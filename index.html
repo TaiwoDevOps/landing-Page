@@ -5,8 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -15,7 +13,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Welcome to Uvanest</title>
 </head>
-
+<!-- @TODO: (1) Work on the firebase deployment aspect in the JS main -->
+<!-- @TODO: (2) Work on the map authentication url account change it with the website owners own by using their gmail-->
 <body>
     <!-- Showcase and nav  -->
     <div id="showcase">
@@ -26,13 +25,10 @@
                         <a href="#showcase">Uvanest</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">About Us</a>
                     </li>
                     <li>
-                        <a href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a href="#what-we-do">Services </a>
+                        <a href="#what-we-do">Our Services</a>
                     </li>
                     <li>
                         <a href="#contact">Contact Us</a>
@@ -42,15 +38,18 @@
             </nav>
         </header>
         <div class="section-main container">
-            <div class="background-img"></div>
-            <h1>Unvanest Company.</h1>
+            <h1>Unvanest Company Limited.</h1>
             <h2>Simple Company's mission and vision statement</h2>
+            <p class="lead hide-on-small">
+                Small screen text that should bever show if we are on a smaller screen
+                size
+            </p>
         </div>
     </div>
     <!-- About  -->
     <section id="about" class="section bg-light">
         <div class="container">
-            <div class="gift-cards">
+            <div class="about-us">
                 <div>
                     <h3>About Us</h3>
                     <h1>Uvanest Company.</h1>
@@ -67,17 +66,17 @@
                 <!-- Begining of accordion tag -->
                 <div>
                     <br>
-                    <h2 class="accordion fas fa-chevron-right"></i> Vision</h2>
+                    <h2 class="accordion"><i class=" fa fa-chevron-right"></i> Vision</h2>
                     <p class="panel">
                         To be a foremost provider of Financial Investment Solutions in Nigeria and Pan-Africa
                     </p>
                     <hr />
-                    <h2 class="accordion fas fa-chevron-right"></i> Mission</h2>
+                    <h2 class="accordion"><i class=" fa fa-chevron-right"></i> Mission</h2>
                     <p class="panel">To continually provide excellent service and research based investment solutions by applying
                         global best practice principles and due diligence tocreate wealth for our stakeholders at all
                         times.</p>
                     <hr />
-                    <h2 class="accordion fas fa-chevron-right"></i> Core Values</h2>
+                    <h2 class="accordion"><i class=" fa fa-chevron-right"></i> Core Values</h2>
                     <div class="listItems panel">
                         <ul>
                             <li>INTEGRITY</li>
@@ -93,71 +92,7 @@
             </div>
         </div>
     </section>
-    <!-- Team members  -->
-    <div class="lecture" id="team">
-        <div class="container">
-            <h1>Our Team</h1>
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="l-img">
-                        <a href="#"><img src="./img/p1.jpg" alt=""></a>
-                        <div class="l-caption">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="l-info">
-                        <h5>UVIE OGBAN </h5>
-                        <p><span>(Managing Director/ CHIEF EXECUTIVE OFFICER)</span>Mr. Ogban leads the team at Uvanest
-                            Capital Limited. With a BSC Degree from University of
-                            Benin, an MBA from Federal University of Technology Owerri and an MSC in Economics, Finance
-                            and Investment from the University Aberdeen UK.</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="l-img">
-                        <a href="#"><img src="./img/p2.jpg" alt=""></a>
-                        <div class="l-caption">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="l-info">
-                        <h5>MRS. MERCY OGBAN </h5>
-                        <p><span>(DIRECTOR) </span>Mrs. Ogban has a BA in Communication and Language Art from the
-                            University of Ibadan and an
-                            MBA from the University of Calabar.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="l-img">
-                        <a href="#"><img src="./img/p3.jpg" alt=""></a>
-                        <div class="l-caption">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="l-info">
-                        <h5>SAM OGRIH </h5>
-                        <p><span>(DIRECTOR) </span>He is the Managing Director/Chief Executive Officer from 2009 DELTA
-                            MEGA TREND NIG LIMITED.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- What we do  -->
     <div class="features-boxed" id="what-we-do">
         <div class="container">
             <div class="intro">
@@ -173,8 +108,7 @@
                             raise Long Term<br>funds on behalf of the Nigerian Federal Government thus creating
                             opportunities for individuals, institutions and other corporate concerns
                             locally or internationally to enter into a risk free and fixed interest rate benefit
-                            investment<br>over a specified period.<br></p><a href="#" class="learn-more">Learn more
-                            »</a>
+                            investment<br>over a specified period.<br></p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
@@ -183,15 +117,13 @@
                         <p class="description">Are Government guaranteed Short Termdebt instruments issued by the
                             Central Bank of Nigeria (CBN). They are traded at both the primary and secondary market
                             to<br>interest investors both locally and internationally. It is risk free
-                            and<br>duration of investment are stated upon issuance.&nbsp;</p><a href="#"
-                            class="learn-more">Learn more »</a>
+                            and<br>duration of investment are stated upon issuance.&nbsp;</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box"><i class="fa fa-list-alt icon"></i>
                         <h3 class="name"><strong>PROFESSIONAL AFFILIATION </strong><br></h3>
-                        <p class="description">Listed<br>Member Financial Markets Dealers Quotes (FMDQ)</p><a href="#"
-                            class="learn-more">Learn more »</a>
+                        <p class="description">Listed:<br>Member Financial Markets Dealers Quotes (FMDQ)</p>
                     </div>
                 </div>
             </div>
@@ -277,7 +209,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bootom text-center">
+        <hr>
+        <div class="footer-bottom text-center">
             Copyright &copy; 2019 Uvanest Capital Limited
         </div>
     </footer>
