@@ -5,6 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -15,6 +32,7 @@
 </head>
 <!-- @TODO: (1) Work on the firebase deployment aspect in the JS main -->
 <!-- @TODO: (2) Work on the map authentication url account change it with the website owners own by using their gmail-->
+<!-- @TODO: (3) Set the header icon -->
 <body>
     <!-- Showcase and nav  -->
     <div id="showcase">
@@ -38,12 +56,8 @@
             </nav>
         </header>
         <div class="section-main container">
-            <h1>Unvanest Company Limited.</h1>
-            <h2>Simple Company's mission and vision statement</h2>
-            <p class="lead hide-on-small">
-                Small screen text that should bever show if we are on a smaller screen
-                size
-            </p>
+            <h1><span>Uvanest</span> <br>Company Limited.</h1>
+            <h2>Pan-African foremost Financial Investment Solutions</h2>
         </div>
     </div>
     <!-- About  -->
@@ -102,7 +116,7 @@
             </div>
             <div class="row justify-content-center features">
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
+                    <div class="box"><img src="./img/bonds.ico" alt="Bonds Investment" height="30%" width="30%">
                         <h3 class="name">BONDS</h3>
                         <p class="description">Are Fixed income instruments issued by Debt Management Office (DMO)to
                             raise Long Term<br>funds on behalf of the Nigerian Federal Government thus creating
@@ -112,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-clock-o icon"></i>
+                    <div class="box"><img src="./img/treasure_jQT_2.ico" alt="Treasure Bills" height="30%" width="30%">
                         <h3 class="name"><strong>TREASURY BILLS </strong><br></h3>
                         <p class="description">Are Government guaranteed Short Termdebt instruments issued by the
                             Central Bank of Nigeria (CBN). They are traded at both the primary and secondary market
@@ -121,7 +135,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box"><i class="fa fa-list-alt icon"></i>
+                    <div class="box"><img src="./img/pa.ico" alt="Personal Afiliation" height="30%" width="30%">
                         <h3 class="name"><strong>PROFESSIONAL AFFILIATION </strong><br></h3>
                         <p class="description">Listed:<br>Member Financial Markets Dealers Quotes (FMDQ)</p>
                     </div>
@@ -149,7 +163,7 @@
 
                 <!-- Alert -->
                 <div class="alert">Your message has been sent!</div>
-                <form action="" id="contactForm">
+                <form id="contactForm">
                     <p>
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" required />
@@ -184,8 +198,8 @@
                 <div class="col-md-4 three_clo">
                     <h4>Newsletter</h4>
                     <p>Subscribe for our monthly newsletter on business strategies. </p>
-                    <form>
-                        <input type="email" placeholder="example@example.com">
+                    <form id="newsLetterForm">
+                        <input type="email" placeholder="example@example.com" id="emailForNews">
                         <button class="btn1">
                             <i class="fa fa-envelope-open"></i>
                         </button>
