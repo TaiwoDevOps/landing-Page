@@ -456,21 +456,11 @@ footer .footer-bottom {
 
 /* -------------Media queries for page dimensions------------- */
 
-@media screen and (max-width: 780px) {
-  .container_contact .wrapper .company-info .map iframe {
-    display: none;
-  }
-}
-
 /* Nav bar Media Queries section */
-@media screen and (max-height: 580px) {
-  #showcase p.lead {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 580px) {
-  .hide-on-small {
+  .hide-on-small,
+  .mid-row {
     display: none;
   }
   nav {
@@ -492,14 +482,16 @@ footer .footer-bottom {
     text-align: left;
     width: 100%;
     text-indent: 25px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
+    color: #eee;
     border-bottom: 1px solid #555;
   }
 
   nav a:hover,
   nav a:focus,
   nav a:active {
-    background: var(--primary-color);
+    color: #eee;
+    text-decoration: none;
   }
 
   nav a#openup:after {
@@ -538,11 +530,6 @@ footer .footer-bottom {
 /* Header Media Queries */
 
 @media screen and (max-width: 580px) {
-  .hide-on-small,
-  .mid-row {
-    display: none;
-  }
-
   #showcase {
     height: 50vh;
   }
@@ -555,8 +542,8 @@ footer .footer-bottom {
     font-size: 3rem;
   }
 
-  #showcase h2 {
-    font-size: 1.5rem;
+  #showcase h2  {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 780px) {
